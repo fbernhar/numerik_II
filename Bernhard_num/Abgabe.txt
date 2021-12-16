@@ -1,0 +1,97 @@
+                    1.Projekt Numerik II.
+                    Florian Bernhard Mtrk: 28258717
+
+Interpretation der Aufgabe 1c.
+1.Verwendung der Mittelpunktregel:
+
+Unter der Verwendung der Mittelpunktregel konvergiert das Verfahren ab einer
+Schrittweite von h = 0.001.
+
+Die beiden Eigenwerte sind -1, -1900;
+ für eine mind. Schrittweite von h < 2 und h < 1,05..x10^-3 konvergiert das Verfahren.
+ Dabei ist die zweite Bedinung h < 1,05...x10^-3 die schärfere Bedingung.
+
+2.Verwendung des Runge-Kutter - Verfahrens.
+
+Unter der Verwendung des Runge Kutter Verfahrens konvergiert das Verfahren mit der Schrittweitensteuerung für jedes h.
+Dabei wird wie bei dem Adaptiven Integrieren die Schrittweite an die Bedürfnisse der Funktion angepasst, welche sich
+durch die genäherte Fehlerrechnung unterschiedlicher Ordnung ergibt.
+
+
+Interpretation der Aufgabe 2c.
+
+1. Mehrschrittverfahren:
+Das erste Mehrschrittverfahren ist Nullstabil, Konsistent und Stabil jedoch nicht A - Stabil.
+h = 1:
+Für die erste Differentialgleichung divergiert das Verfahren nach 8 Iterationen gegen + unendlich.
+Für die zweite Differentialgleichung divergiert das Verfahren nach 6 Iterationen gegen - unendlich.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 divergiert das Verfahren nach 3 Iterationen.
+
+
+h = 0.1:
+Für die erste Differentialgleichung konvergiert das Verfahren ähnlich gut wie das zweite Mehrschrittverfahren gegen 100 für einen Iterationsbereich von 10 Iterationen mit einer Schrittweite von 0.1
+Für die zweite Differentialgleichung divergiert das Verfahren nach 9 Iterationen gegen - unendlich.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 divergiert das Verfahren nach 8 Iterationen gegen
+- unendlich.
+
+
+h = 0.001
+Für die erste Differentialgeichung konvergiert das Verfahren identisch gut wie das zweite Mehrschrittverfahren.
+Für die zweite Differentialgeichung konvergiert das Verfahren identisch gut wie das zweite Mehrschrittverfahren.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 konvergiert das Verfahren gegen 0.
+
+
+-> Das Verfahren ist zwar Stabil, jedoch wird eine kleine Schrittweite für eine Konvergenz vorrausgesetz.
+
+
+2. Mehrschrittverfahren:
+Das zweite Mehrschrittverfahren ist Nullstabil, Konsistent und A - Stabil, da es sich um ein BDF Verfahren für k = 2 handelt.
+h = 1:
+Für die erste Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+Für die zweite Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 zeigt sich keine Änderung des Verfahrnes. Es ist konstant 0.
+
+
+h = 0.1:
+Für die erste Differentialgleichung konvergiert das Verfahren gegen 100 für einen Iterationsbereich von 10 bei einer Schrittweite von 0.1.
+Für die zweite Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 zeigt sich keine Änderung des Verfahrnes. Es ist konstant 0.
+
+
+h = 0.001:
+Für die erste Differentialgleichung konvergiert das Verfahren.
+Für die zweite Differentialgleichung konvergiert das Verfahren.
+
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 konvergiert das Verfahren gegen 0.
+
+-> Das Verfahren konvergiert für jede Schrittweite, da es A - Stabil ist.
+
+
+3. Mehrschrittverfahren:
+Das dritte Mehrschrittverfahren ist nicht nullstabil und konvergiert somit nicht.
+h = 1:
+Für die erste Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+Für die zweite Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 zeigt sich keine Änderung des Verfahrnes. Es ist konstant 0.
+
+h = 0.1:
+Für die erste Differentialgleichung divergiert das Verfahren nach 2 Iterationen gegen - unendlich.
+Für die zweite Differentialgleichung zeigt sich keine Änderung für das Verfahren. Es ist konstant 0.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 zeigt sich keine Änderung des Verfahrnes. Es ist konstant 0.
+
+h = 0.001:
+Für die erste Differentialgeichung divergiert das Verfahren nach 5 Iterationen.
+Für die zweite Differentialgeichung divergiert das Verfahren nach 3 Iterationen.
+
+Für die zweite Differentialgleichung und einem Startwert von u(0) = 2 divergiert das Verfahren nach der 3 Iteration gegen - unendlich.
+
+-> Das Verfahren divergiert aufgrund der nicht vorhandenen Nullstabilität für jegliches h.
+
